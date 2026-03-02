@@ -33,3 +33,24 @@ export default function RootLayout({
     </html>
   );
 }
+export default function AdminLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <div style={{ display: "flex", minHeight: "100vh" }}>
+
+      <aside style={{ width: 250, background: "#111", color: "#fff", padding: 20 }}>
+        <h2>Painel</h2>
+        <p>Dashboard</p>
+        <p>Pagamentos</p>
+        <p>Usuários</p>
+      </aside>
+
+      <main style={{ flex: 1, padding: 30 }}>
+        {children}
+      </main>
+
+    </div>
+  );
+}git add.
+git commit - m "feat: add admin layout"
+git push
+
